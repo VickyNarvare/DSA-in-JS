@@ -11,10 +11,36 @@
 // for (let val in count) {
 // }
 
-let arrOfObj = [
-  { name: "vicky", age: 20 },
-  { name: "rishi", age: 21 },
-];
-const getAdult = () => {
-    for(let  of arrOfObj)
+// let arrOfObj = [
+//   { name: "vicky", age: 20 },
+//   { name: "rishi", age: 21 },
+// ];
+// const getAdult = () => {
+//     for(let  of arrOfObj)
+// };
+
+// --------------
+// function introduce(city, country) {
+//   console.log(`${this.name} from ${city} `);
+// }
+// const person = {
+//   name: "Ritik",
+// };
+// introduce.apply(person, ["inodre"]);
+// ----------------
+
+// const user = {
+//   name: "Ritik",
+//   greet() {
+//     console.log(this.name);
+//   },
+// };
+// const fn = user.greet.bind(user);
+// fn();
+
+// ----------------
+const animal = {
+  eats: true,
 };
+const dog = Object.create(animal);
+console.log(dog.eats);
