@@ -39,8 +39,18 @@
 // fn();
 
 // ----------------
-const animal = {
-  eats: true,
-};
-const dog = Object.create(animal);
-console.log(dog.eats);
+// const animal = {
+//   eats: true,
+// };
+// const dog = Object.create(animal);
+// console.log(dog.eats);
+// ----------------
+function printRightTriangleNumbers(n) {
+  for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= i; j++) {
+      process.stdout.write(`${String.fromCharCode(64 + j)} `);
+    }
+    console.log();
+  }
+}
+printRightTriangleNumbers(5);
